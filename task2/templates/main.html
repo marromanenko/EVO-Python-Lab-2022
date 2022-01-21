@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='formalization.css') }}">
+    <title>task 2</title>
+</head>
+<body style="background-color: aliceblue; font-size: 20px;">
+    <form style="text-align: center;" method="post" action="/add_message">
+        <input style="font-size: 20px; margin-top: 30px;" type="text" name="name" />
+        <button style="font-size: 20px; margin-top: 30px;" type="submit">Привітатись</button>
+    </form>
+    <p style="text-align:center">{{ variable }}</p>
+
+<a href="{{ url_for('print_list') }}"><p style="text-align:center">Список усіх, з ким уже привіталися</p></a>
+
+</body>
+</html>
